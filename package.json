@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "archive": "tsx ./tools/archive.ts",
     "format": "run-s format:*",
     "format:prettier": "prettier --write .",
     "format:sort-package-json": "sort-package-json",
@@ -24,8 +25,10 @@
     "prettier": "^3.2.4",
     "solid-devtools": "^0.29.2",
     "sort-package-json": "^2.6.0",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
-    "vite-plugin-solid": "^2.8.2"
+    "vite-plugin-solid": "^2.8.2",
+    "zip-a-folder": "^3.1.6"
   }
 }
