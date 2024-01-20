@@ -1,0 +1,6 @@
+{
+  "recommendations": [
+    "unional.vscode-sort-package-json",
+    "esbenp.prettier-vscode"
+  ]
+}
