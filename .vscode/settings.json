@@ -4,6 +4,12 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
+  "json.schemas": [
+    {
+      "fileMatch": ["manifest.json"],
+      "url": "https://json.schemastore.org/chrome-manifest.json"
+    }
+  ],
   "[json]": {
     "editor.codeActionsOnSave": {
       "source.sortPackageJson": "explicit"
