@@ -16,6 +16,12 @@ devDependencies:
   '@types/chrome':
     specifier: ^0.0.258
     version: 0.0.258
+  '@types/chrome-webstore-upload':
+    specifier: ^1.0.0
+    version: 1.0.0
+  chrome-webstore-upload:
+    specifier: ^3.0.3
+    version: 3.0.3
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -1041,6 +1047,12 @@ packages:
       '@babel/types': 7.22.5
     dev: true
 
+  /@types/chrome-webstore-upload@1.0.0:
+    resolution: {integrity: sha512-Dc04aKntQlHBImzQlk/nEdQMgzYVbf1PLvWO5HrKreQ7sUEmUGpioELbojqOtazo81Hta27SNyN5JRgAi83d/A==}
+    dependencies:
+      '@types/node': 20.11.28
+    dev: true
+
   /@types/chrome@0.0.258:
     resolution: {integrity: sha512-vicJi6cg2zaFuLmLY7laG6PHBknjKFusPYlaKQ9Zlycskofy71rStlGvW07MUuqUIVorZf8k5KH+zeTTGcH2dQ==}
     dependencies:
@@ -1064,6 +1076,12 @@ packages:
 
   /@types/har-format@1.2.15:
     resolution: {integrity: sha512-RpQH4rXLuvTXKR0zqHq3go0RVXYv/YVqv4TnPH95VbwUxZdQlK1EtcMvQvMpDngHbt13Csh9Z4qT9AbkiQH5BA==}
+    dev: true
+
+  /@types/node@20.11.28:
+    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@webcomponents/custom-elements@1.6.0:
@@ -1270,6 +1288,11 @@ packages:
       htmlparser2: 8.0.2
       parse5: 7.1.2
       parse5-htmlparser2-tree-adapter: 7.0.0
+    dev: true
+
+  /chrome-webstore-upload@3.0.3:
+    resolution: {integrity: sha512-pVK2lkUeN6LdX+gcNKO4IqnHCL6qYMmQ9M1unMAZFzUpYnMSHwyNk6JnLB97X2ehikk1o8aRTPdEwpMdok/3Sg==}
+    engines: {node: '>=18'}
     dev: true
 
   /color-convert@1.9.3:
@@ -2845,6 +2868,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /universalify@2.0.1:
