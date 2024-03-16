@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export EXTENSION_ID=
+export CLIENT_ID=
+export CLIENT_SECRET=
+export REFRESH_TOKEN=
