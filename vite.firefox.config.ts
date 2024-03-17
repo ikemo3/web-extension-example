@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 import { crx } from "@crxjs/vite-plugin";
-import manifest from "./manifest.firefox.json";
+import { firefoxManifest } from "./manifest";
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
@@ -12,7 +12,7 @@ export default defineConfig({
     */
     // devtools(),
     solidPlugin(),
-    crx({ manifest, browser: "firefox" }),
+    crx({ manifest: firefoxManifest, browser: "firefox" }),
   ],
   server: {
     port: 3000,
