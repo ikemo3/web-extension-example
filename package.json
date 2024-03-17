@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "archive": "tsx ./tools/archive.ts",
-    "build": "vite build",
+    "archive": "run-s archive:*",
+    "archive:chrome": "tsx ./tools/archive.ts",
+    "build": "run-s build:*",
+    "build:chrome": "vite build",
     "dev": "vite",
     "format": "run-s format:*",
     "format:prettier": "prettier --write .",
