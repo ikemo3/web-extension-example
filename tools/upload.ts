@@ -8,7 +8,7 @@ const store = chromeWebstoreUpload({
   refreshToken: process.env.REFRESH_TOKEN,
 });
 
-const myZipFile = fs.createReadStream("./archive.zip");
+const myZipFile = fs.createReadStream("./artifacts/archive.zip");
 store.uploadExisting(myZipFile).then((res) => {
   // Response is a Resource Representation
   // https://developer.chrome.com/webstore/webstore_api/items#resource
