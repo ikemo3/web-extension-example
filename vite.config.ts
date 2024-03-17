@@ -1,7 +1,8 @@
+import { crx } from "@crxjs/vite-plugin";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
-import { crx } from "@crxjs/vite-plugin";
-import { firefoxManifest, chromeManifest } from "./manifest";
+
+import { chromeManifest, firefoxManifest } from "./manifest";
 
 export default defineConfig(({ mode }) => {
   const isFirefox = mode === "firefox";
