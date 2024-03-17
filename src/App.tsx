@@ -3,11 +3,13 @@ import type { Component } from "solid-js";
 import logo from "./logo.svg";
 import styles from "./App.module.css";
 
+const url = import.meta.env.DEV ? chrome.runtime.getURL(logo) : logo;
+
 const App: Component = () => {
   return (
     <div class={styles.App}>
       <header class={styles.header}>
-        <img src={chrome.runtime.getURL(logo)} class={styles.logo} alt="logo" />
+        <img src={url} class={styles.logo} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
