@@ -22,6 +22,7 @@
     "lint:sort-package-json": "sort-package-json --check",
     "serve": "vite preview",
     "start": "vite",
+    "test": "vitest",
     "upload": "tsx ./tools/upload.ts"
   },
   "dependencies": {
@@ -36,6 +37,7 @@
     "chrome-webstore-upload": "^3.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-simple-import-sort": "^12.0.0",
+    "happy-dom": "^13.8.6",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.4",
     "solid-devtools": "^0.29.3",
@@ -44,6 +46,7 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
     "vite-plugin-solid": "^2.8.2",
+    "vitest": "^1.4.0",
     "web-ext": "^7.11.0",
     "zip-a-folder": "^3.1.6"
   },

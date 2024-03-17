@@ -1,6 +1,6 @@
 import { crx } from "@crxjs/vite-plugin";
-import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import { defineConfig } from "vitest/config";
 
 import { chromeManifest, firefoxManifest } from "./manifest";
 
@@ -17,6 +17,10 @@ export default defineConfig(({ mode }) => {
     plugins: [solidPlugin(), crx({ manifest, browser })],
     server: {
       port: 3000,
+    },
+    test: {
+      globals: true,
+      environment: "happy-dom",
     },
   };
 });
