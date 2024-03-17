@@ -4,16 +4,16 @@
   "type": "module",
   "scripts": {
     "archive": "tsx ./tools/archive.ts",
+    "build": "vite build",
+    "dev": "vite",
     "format": "run-s format:*",
     "format:prettier": "prettier --write .",
     "format:sort-package-json": "sort-package-json",
     "lint": "run-s lint:*",
     "lint:prettier": "prettier --check .",
     "lint:sort-package-json": "sort-package-json --check",
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
     "serve": "vite preview",
+    "start": "vite",
     "upload": "tsx ./tools/upload.ts"
   },
   "dependencies": {
@@ -24,7 +24,7 @@
     "@types/chrome": "^0.0.258",
     "@types/chrome-webstore-upload": "^1.0.0",
     "chrome-webstore-upload": "^3.0.3",
-    "npm-run-all": "^4.1.5",
+    "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.4",
     "solid-devtools": "^0.29.2",
     "sort-package-json": "^2.8.0",
