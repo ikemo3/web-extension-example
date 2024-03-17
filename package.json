@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "chrome-extension-example",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
