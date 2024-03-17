@@ -1,24 +1,21 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 import { crx } from "@crxjs/vite-plugin";
-import { chromeManifest } from "./manifest";
-// import devtools from 'solid-devtools/vite';
+import { firefoxManifest, chromeManifest } from "./manifest";
 
-export default defineConfig({
-  plugins: [
-    /* 
-    Uncomment the following line to enable solid-devtools.
-    For more info see https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
-    */
-    // devtools(),
-    solidPlugin(),
-    crx({ manifest: chromeManifest }),
-  ],
-  server: {
-    port: 3000,
-  },
-  build: {
-    outDir: "dist/chrome",
-    target: "esnext",
-  },
+export default defineConfig(({ mode }) => {
+  const isFirefox = mode === "firefox";
+  const manifest = isFirefox ? firefoxManifest : chromeManifest;
+  const browser = isFirefox ? "firefox" : "chrome";
+
+  return {
+    build: {
+      outDir: `dist/${browser}`,
+      target: "esnext",
+    },
+    plugins: [solidPlugin(), crx({ manifest, browser })],
+    server: {
+      port: 3000,
+    },
+  };
 });
