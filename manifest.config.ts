@@ -1,3 +1,5 @@
+import { defineManifest } from "@crxjs/vite-plugin";
+
 const baseManifest = {
   manifest_version: 3,
   name: "CRXJS Solid Vite Example",
@@ -11,9 +13,9 @@ const baseManifest = {
   ],
 };
 
-export const chromeManifest = baseManifest;
+const chromeManifest = baseManifest;
 
-export const firefoxManifest = {
+const firefoxManifest = {
   ...baseManifest,
   browser_specific_settings: {
     gecko: {
@@ -21,3 +23,13 @@ export const firefoxManifest = {
     },
   },
 };
+
+export default defineManifest((env) => {
+  const isFirefox = env.mode === "firefox";
+
+  if (isFirefox) {
+    return firefoxManifest;
+  } else {
+    return chromeManifest;
+  }
+});
