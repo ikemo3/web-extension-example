@@ -12,10 +12,18 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: `dist/${browser}`,
       target: "esnext",
+      minify: false,
+      cssMinify: false,
+      sourcemap: true,
       rollupOptions: {
         input: {
           popup: "src/popup/index.html",
           options: "src/options/options.html",
+        },
+        output: {
+          entryFileNames: "assets/[name].js",
+          chunkFileNames: "assets/[name].js",
+          assetFileNames: "assets/[name].[ext]",
         },
       },
     },
