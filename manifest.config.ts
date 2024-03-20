@@ -1,9 +1,13 @@
 import { defineManifest } from "@crxjs/vite-plugin";
 
+import packageJson from "./package.json";
+import { convertSemverToManifestVersion } from "./src/libs/version";
+const { version } = packageJson;
+
 const baseManifest = {
   manifest_version: 3,
   name: "CRXJS Solid Vite Example",
-  version: "0.0.2",
+  version: convertSemverToManifestVersion(version),
   action: { default_popup: "index.html" },
   content_scripts: [
     {
