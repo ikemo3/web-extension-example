@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => {
       target: "esnext",
       rollupOptions: {
         input: {
+          popup: "src/popup/index.html",
           options: "src/options/options.html",
         },
       },
