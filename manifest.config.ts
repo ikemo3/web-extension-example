@@ -1,7 +1,7 @@
 import { defineManifest } from "@crxjs/vite-plugin";
 
 import packageJson from "./package.json";
-import { convertSemverToManifestVersion } from "./src/libs/version";
+import { convertSemverToManifestVersion } from "./src/shared/version";
 const { version } = packageJson;
 
 type ChromeManifestBackground = {
@@ -28,8 +28,8 @@ export default defineManifest((env) => {
     ? firefoxSpecificSettings
     : undefined;
   const background: ManifestBackground = isFirefox
-    ? { scripts: ["src/background.ts"] }
-    : { service_worker: "src/background.ts", type: "module" };
+    ? { scripts: ["src/background/background.ts"] }
+    : { service_worker: "src/background/background.ts", type: "module" };
 
   return {
     manifest_version: 3,
@@ -39,12 +39,12 @@ export default defineManifest((env) => {
     permissions: ["contextMenus"],
     background,
     options_ui: {
-      page: "options.html",
+      page: "src/options/options.html",
       open_in_tab: true,
     },
     content_scripts: [
       {
-        js: ["src/content.tsx"],
+        js: ["src/content_scripts/example.tsx"],
         matches: ["https://example.com/*"],
       },
     ],
