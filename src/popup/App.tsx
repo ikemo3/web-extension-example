@@ -11,7 +11,7 @@ const App: Component = () => {
       <header class={styles.header}>
         <img src={url} class={styles.logo} alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/popup/App.tsx</code> and save to reload.
         </p>
         <a
           class={styles.link}

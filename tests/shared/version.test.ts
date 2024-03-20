@@ -1,4 +1,4 @@
-import { convertSemverToManifestVersion } from "../../src/libs/version";
+import { convertSemverToManifestVersion } from "../../src/shared/version";
 
 describe("convertSemverToManifestVersion", () => {
   it("0", () => {
