@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: `dist/${browser}`,
       target: "esnext",
+      rollupOptions: {
+        input: {
+          options: "options.html",
+        },
+      },
     },
     plugins: [solidPlugin(), crx({ manifest, browser })],
     server: {

@@ -9,6 +9,10 @@ const baseManifest = {
   name: "CRXJS Solid Vite Example",
   version: convertSemverToManifestVersion(version),
   action: { default_popup: "index.html" },
+  options_ui: {
+    page: "options.html",
+    open_in_tab: true,
+  },
   content_scripts: [
     {
       js: ["src/content.tsx"],
