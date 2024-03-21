@@ -35,6 +35,11 @@ export default defineManifest((env) => {
     manifest_version: 3,
     name: "CRXJS Solid Vite Example",
     version: convertSemverToManifestVersion(version),
+    icons: {
+      16: "icons/icon16.png",
+      48: "icons/icon48.png",
+      128: "icons/icon128.png",
+    },
     action: { default_popup: "src/popup/index.html" },
     permissions: ["contextMenus"],
     background,
