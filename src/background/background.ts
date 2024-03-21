@@ -30,4 +30,20 @@ chrome.runtime.onInstalled.addListener(async () => {
       contexts: ["action"],
     });
   }
+
+  if (import.meta.env.MODE === "firefox") {
+    // Firefoxのときはオプションメニューを追加
+    chrome.contextMenus.create({
+      id: "openOptions",
+      title: "オプション",
+      contexts: ["action"],
+    });
+  }
+
+  chrome.contextMenus.onClicked.addListener((info) => {
+    if (info.menuItemId === "openOptions") {
+      // オプションページを開く
+      chrome.runtime.openOptionsPage();
+    }
+  });
 });
