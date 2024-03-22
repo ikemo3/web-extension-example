@@ -28,9 +28,9 @@ module.exports = {
           "[.]d[.]ts$", // TypeScript declaration files
           "(^|/)tsconfig[.]json$", // TypeScript config
           "(^|/)(?:babel|webpack)[.]config[.](?:js|cjs|mjs|ts|cts|mts|json)$", // other configs
-          "^coverage/",
-          "^dist/",
           "^src/background/background.ts",
+          "^postcss.config.js",
+          "^tailwind.config.js",
         ],
       },
       to: {},
@@ -200,7 +200,7 @@ module.exports = {
     /* Which modules not to follow further when encountered */
     doNotFollow: {
       /* path: an array of regular expressions in strings to match against */
-      path: ["node_modules"],
+      path: ["^coverage", "^dist", "node_modules"],
     },
 
     /* Which modules to exclude */

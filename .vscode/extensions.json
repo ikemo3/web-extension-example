@@ -2,6 +2,7 @@
   "recommendations": [
     "unional.vscode-sort-package-json",
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
   ]
 }
