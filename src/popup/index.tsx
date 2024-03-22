@@ -1,4 +1,6 @@
 /* @refresh reload */
+import "../input.css";
+
 import { render } from "solid-js/web";
 
 import Popup from "./popup";
