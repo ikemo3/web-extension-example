@@ -1,6 +1,8 @@
-# chrome-extension-example
+# web-extension-example
 
 [![Build Status](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
+
+Chrome/Firefox 拡張機能の参考実装
 
 ## 使い方
 
