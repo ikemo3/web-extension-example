@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           popup: "src/popup/index.html",
-          options: "src/options/options.html",
+          options: "src/options/index.html",
         },
         output: {
           entryFileNames: "assets/[name].js",

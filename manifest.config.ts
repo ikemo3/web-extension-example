@@ -44,7 +44,7 @@ export default defineManifest((env) => {
     permissions: ["contextMenus"],
     background,
     options_ui: {
-      page: "src/options/options.html",
+      page: "src/options/index.html",
       open_in_tab: true,
     },
     content_scripts: [
