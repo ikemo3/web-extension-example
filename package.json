@@ -3,9 +3,7 @@
   "version": "0.0.2",
   "type": "module",
   "scripts": {
-    "archive": "run-s archive:*",
-    "archive:chrome": "tsx ./tools/archive.ts",
-    "archive:firefox": "web-ext build -s dist/firefox -a artifacts -n firefox.zip -o",
+    "archive": "tsx ./tools/archive.ts",
     "build": "run-s build:*",
     "build:chrome": "vite build",
     "build:firefox": "vite build --mode firefox",
@@ -57,7 +55,6 @@
     "vite": "^5.0.12",
     "vite-plugin-solid": "^2.8.2",
     "vitest": "^1.4.0",
-    "web-ext": "^7.11.0",
     "zip-a-folder": "^3.1.6"
   },
   "packageManager": "pnpm@8.15.4"
