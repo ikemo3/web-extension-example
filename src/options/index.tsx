@@ -3,7 +3,7 @@ import "../input.css";
 
 import { render } from "solid-js/web";
 
-import App from "./App";
+import Options from "./Options";
 
 const root = document.getElementById("root");
 
@@ -13,4 +13,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <App />, root!);
+render(() => <Options />, root!);
