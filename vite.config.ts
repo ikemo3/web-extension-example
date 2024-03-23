@@ -1,4 +1,5 @@
 import { crx } from "@crxjs/vite-plugin";
+import stringHash from "string-hash";
 import solidPlugin from "vite-plugin-solid";
 import { defineConfig } from "vitest/config";
 
@@ -24,6 +25,17 @@ export default defineConfig(({ mode }) => {
           entryFileNames: "assets/[name].js",
           chunkFileNames: "assets/[name].js",
           assetFileNames: "assets/[name].[ext]",
+        },
+      },
+    },
+    css: {
+      modules: {
+        generateScopedName: function (name, filename, css) {
+          const i = css.indexOf(`.${name}`);
+          const lineNumber = css.substring(0, i).split(/[\r\n]/).length;
+          const hash = stringHash(css).toString(36).substring(0, 5);
+
+          return `crx-_${name}_${hash}_${lineNumber}`;
         },
       },
     },
