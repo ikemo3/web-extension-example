@@ -195,6 +195,46 @@ module.exports = {
         dependencyTypes: ["npm-peer"],
       },
     },
+    {
+      name: "not-to-background",
+      severity: "error",
+      from: {
+        pathNot: ["^src/background"],
+      },
+      to: {
+        path: "^src/background",
+      },
+    },
+    {
+      name: "not-to-content-scripts",
+      severity: "error",
+      from: {
+        pathNot: ["^src/content_scripts"],
+      },
+      to: {
+        path: "^src/content_scripts",
+      },
+    },
+    {
+      name: "not-to-options",
+      severity: "error",
+      from: {
+        pathNot: ["^src/options"],
+      },
+      to: {
+        path: "^src/options",
+      },
+    },
+    {
+      name: "not-to-popup",
+      severity: "error",
+      from: {
+        pathNot: ["^src/popup"],
+      },
+      to: {
+        path: "^src/popup",
+      },
+    },
   ],
   options: {
     /* Which modules not to follow further when encountered */
