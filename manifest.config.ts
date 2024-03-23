@@ -18,7 +18,7 @@ type ManifestBackground = ChromeManifestBackground | FirefoxManifestBackground;
 
 const firefoxSpecificSettings = {
   gecko: {
-    id: "chrome-extension-example@ikemo3.com",
+    id: "web-extension-example@ikemo3.com",
   },
 };
 
