@@ -1,6 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>ikemo3/renovate-config"
-  ]
+  "extends": ["config:base", "github>ikemo3/renovate-config", "schedule:weekly"]
 }
