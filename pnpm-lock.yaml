@@ -37,8 +37,8 @@ importers:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
       chrome-webstore-upload:
-        specifier: ^3.0.3
-        version: 3.0.3
+        specifier: ^3.1.0
+        version: 3.1.0
       dependency-cruiser:
         specifier: ^16.3.2
         version: 16.3.2
@@ -913,8 +913,8 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  chrome-webstore-upload@3.0.3:
-    resolution: {integrity: sha512-pVK2lkUeN6LdX+gcNKO4IqnHCL6qYMmQ9M1unMAZFzUpYnMSHwyNk6JnLB97X2ehikk1o8aRTPdEwpMdok/3Sg==}
+  chrome-webstore-upload@3.1.0:
+    resolution: {integrity: sha512-FpJFVewoeazHEz86vi6KaWq8+YYuX5RgmH6oVGDjeLS75n62qzjlwx1VQP4U2UeOPMNuUA3PYQQI6qkoSWVN8A==}
     engines: {node: '>=18'}
 
   color-convert@1.9.3:
@@ -3221,7 +3221,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chrome-webstore-upload@3.0.3: {}
+  chrome-webstore-upload@3.1.0: {}
 
   color-convert@1.9.3:
     dependencies:
