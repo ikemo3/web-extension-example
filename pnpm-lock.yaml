@@ -40,8 +40,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       dependency-cruiser:
-        specifier: ^16.3.2
-        version: 16.3.2
+        specifier: ^16.3.3
+        version: 16.3.3
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -754,8 +754,8 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
-  ajv@8.13.0:
-    resolution: {integrity: sha512-PRA911Blj99jR5RMeTunVbNXMF6Lp4vZXnk5GQjcnUWUTsrXtekg/pnmFFI2u/I36Y/2bITGS30GZCXei6uNkA==}
+  ajv@8.16.0:
+    resolution: {integrity: sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -930,8 +930,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  commander@12.0.0:
-    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
   commander@4.1.1:
@@ -1010,8 +1010,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  dependency-cruiser@16.3.2:
-    resolution: {integrity: sha512-nNaa2wpViBMqWXNqwqR2YMWLXXpr3CGtaNk53yOPWFWe4qR3A242YyHnK+h6v4IeY1oxM+APXg4af5U7iovyjQ==}
+  dependency-cruiser@16.3.3:
+    resolution: {integrity: sha512-+YHPbd6RqM1nLUUbRVkbYO6mVeeq+VEL+bBkR+KFkYVU20vs1D0TalZ9z/hDLxiYiYCSTctUaoWWaUrRc1I+mw==}
     engines: {node: ^18.17||>=20}
     hasBin: true
 
@@ -1072,8 +1072,8 @@ packages:
   emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
 
-  enhanced-resolve@5.16.1:
-    resolution: {integrity: sha512-4U5pNsuDl0EhuZpq46M5xPslstkviJuhrdobaRDBk2Jy2KO37FDAJl4lb2KlNabxT0m4MTK2UHNrsAcphE8nyw==}
+  enhanced-resolve@5.17.0:
+    resolution: {integrity: sha512-dwDPwZL0dmye8Txp2gzFmA6sxALaSvdRDjPH0viLcKrtlOL3tw62nWWweVD1SdILDTJrbrL6tdWVN58Wo6U3eA==}
     engines: {node: '>=10.13.0'}
 
   entities@4.5.0:
@@ -1928,6 +1928,11 @@ packages:
 
   semver@7.6.1:
     resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.6.2:
+    resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -3033,7 +3038,7 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
-  ajv@8.13.0:
+  ajv@8.16.0:
     dependencies:
       fast-deep-equal: 3.1.3
       json-schema-traverse: 1.0.0
@@ -3235,7 +3240,7 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  commander@12.0.0: {}
+  commander@12.1.0: {}
 
   commander@4.1.1: {}
 
@@ -3304,17 +3309,17 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  dependency-cruiser@16.3.2:
+  dependency-cruiser@16.3.3:
     dependencies:
       acorn: 8.11.3
       acorn-jsx: 5.3.2(acorn@8.11.3)
       acorn-jsx-walk: 2.0.0
       acorn-loose: 8.4.0
       acorn-walk: 8.3.2
-      ajv: 8.13.0
+      ajv: 8.16.0
       chalk: 5.3.0
-      commander: 12.0.0
-      enhanced-resolve: 5.16.1
+      commander: 12.1.0
+      enhanced-resolve: 5.17.0
       figures: 6.1.0
       ignore: 5.3.1
       indent-string: 5.0.0
@@ -3327,7 +3332,7 @@ snapshots:
       prompts: 2.4.2
       rechoir: 0.8.0
       safe-regex: 2.1.1
-      semver: 7.6.1
+      semver: 7.6.2
       semver-try-require: 7.0.0
       teamcity-service-messages: 0.1.14
       tsconfig-paths-webpack-plugin: 4.1.0
@@ -3382,7 +3387,7 @@ snapshots:
 
   emoji-regex@9.2.2: {}
 
-  enhanced-resolve@5.16.1:
+  enhanced-resolve@5.17.0:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.1
@@ -3889,7 +3894,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.1
 
   memoize@10.0.0:
     dependencies:
@@ -4229,7 +4234,7 @@ snapshots:
 
   semver-try-require@7.0.0:
     dependencies:
-      semver: 7.6.1
+      semver: 7.6.2
 
   semver@6.3.1: {}
 
@@ -4238,6 +4243,8 @@ snapshots:
       lru-cache: 6.0.0
 
   semver@7.6.1: {}
+
+  semver@7.6.2: {}
 
   seroval-plugins@1.0.4(seroval@1.0.4):
     dependencies:
@@ -4457,7 +4464,7 @@ snapshots:
   tsconfig-paths-webpack-plugin@4.1.0:
     dependencies:
       chalk: 4.1.2
-      enhanced-resolve: 5.16.1
+      enhanced-resolve: 5.17.0
       tsconfig-paths: 4.2.0
 
   tsconfig-paths@4.2.0:
