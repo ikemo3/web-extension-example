@@ -29,7 +29,7 @@
     "solid-js": "^1.8.18"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "2.0.0-beta.23",
+    "@crxjs/vite-plugin": "2.0.0-beta.25",
     "@types/chrome": "^0.0.268",
     "@types/chrome-webstore-upload": "^1.0.0",
     "@types/string-hash": "^1.1.3",
