@@ -43,7 +43,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "globals": "^15.9.0",
-    "happy-dom": "^15.7.3",
+    "happy-dom": "^15.7.4",
     "npm-run-all2": "^6.2.2",
     "postcss": "^8.4.45",
     "prettier": "^3.3.3",
