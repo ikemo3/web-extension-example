@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.25",
-    "@eslint/js": "^9.11.0",
+    "@eslint/js": "^9.11.1",
     "@types/chrome": "^0.0.271",
     "@types/chrome-webstore-upload": "^1.0.0",
     "@types/eslint__js": "^8.42.3",
@@ -39,7 +39,7 @@
     "autoprefixer": "^10.4.20",
     "chrome-webstore-upload": "^3.1.1",
     "dependency-cruiser": "^16.4.2",
-    "eslint": "^9.11.0",
+    "eslint": "^9.11.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "globals": "^15.9.0",
