@@ -37,8 +37,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
       chrome-webstore-upload:
-        specifier: ^3.1.1
-        version: 3.1.1
+        specifier: ^3.1.3
+        version: 3.1.3
       dependency-cruiser:
         specifier: ^16.4.2
         version: 16.4.2
@@ -1097,8 +1097,8 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  chrome-webstore-upload@3.1.1:
-    resolution: {integrity: sha512-nVINbEn51+4pGg0SU5tnkF7+ydY9Llcd++Wbq0TudzRDBlZFBdHOQnoHLTPzke30wvMD733UiIyxNmP5Wtzqeg==}
+  chrome-webstore-upload@3.1.3:
+    resolution: {integrity: sha512-8bMkzDJ6f/dVZPf1s+IQuy/Sk7gS45zshOsUU4XT4d5pohyJZcP2yIVnTuzga+r39KnysBMmcQDx9SPqts/5Sw==}
     engines: {node: '>=18'}
 
   color-convert@1.9.3:
@@ -2265,6 +2265,10 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
+  type-fest@4.26.1:
+    resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
+    engines: {node: '>=16'}
+
   typescript-eslint@8.7.0:
     resolution: {integrity: sha512-nEHbEYJyHwsuf7c3V3RS7Saq+1+la3i0ieR3qP0yjqWSzVmh8Drp47uOl9LjbPANac4S7EFSqvcYIKXUUwIfIQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -3428,7 +3432,9 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chrome-webstore-upload@3.1.1: {}
+  chrome-webstore-upload@3.1.3:
+    dependencies:
+      type-fest: 4.26.1
 
   color-convert@1.9.3:
     dependencies:
@@ -4585,6 +4591,8 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
+
+  type-fest@4.26.1: {}
 
   typescript-eslint@8.7.0(eslint@9.11.1(jiti@1.21.0))(typescript@5.6.2):
     dependencies:
