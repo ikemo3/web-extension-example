@@ -19,8 +19,8 @@ importers:
         specifier: ^9.15.0
         version: 9.15.0
       '@types/chrome':
-        specifier: ^0.0.284
-        version: 0.0.284
+        specifier: ^0.0.285
+        version: 0.0.285
       '@types/chrome-webstore-upload':
         specifier: ^1.0.0
         version: 1.0.0
@@ -771,8 +771,8 @@ packages:
   '@types/chrome-webstore-upload@1.0.0':
     resolution: {integrity: sha512-Dc04aKntQlHBImzQlk/nEdQMgzYVbf1PLvWO5HrKreQ7sUEmUGpioELbojqOtazo81Hta27SNyN5JRgAi83d/A==}
 
-  '@types/chrome@0.0.284':
-    resolution: {integrity: sha512-nQwZQVfepZcUvKKGByOh/p4ZKaaNP1BaLaVjcAXO4jr81z3JBehyXBc/RqS30+D6W7RrMYKNKBCFsQLuhX0OSA==}
+  '@types/chrome@0.0.285':
+    resolution: {integrity: sha512-hjHIibIQ+2Ixdcg37031hmsgUvqSaP30TecRq4WKIsW8YbEMBTvnSk6e9dHf6uCv8aYod6iptcy62RSH8TjNkA==}
 
   '@types/eslint@9.6.1':
     resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
@@ -2951,7 +2951,7 @@ snapshots:
     dependencies:
       '@types/node': 22.8.6
 
-  '@types/chrome@0.0.284':
+  '@types/chrome@0.0.285':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
