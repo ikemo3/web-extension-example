@@ -13,8 +13,8 @@ importers:
         version: 1.9.4
     devDependencies:
       '@crxjs/vite-plugin':
-        specifier: 2.0.0-beta.29
-        version: 2.0.0-beta.29
+        specifier: 2.0.0-beta.30
+        version: 2.0.0-beta.30
       '@eslint/js':
         specifier: ^9.17.0
         version: 9.17.0
@@ -193,8 +193,8 @@ packages:
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
     engines: {node: '>=6.9.0'}
 
-  '@crxjs/vite-plugin@2.0.0-beta.29':
-    resolution: {integrity: sha512-BavhDs/WvuBuS0WR3K1IIPgDt1/Pr+wqaQ0ID2/JeyNexokTxVoXXTH8DShtqpjByomBc+5w6sW8OI95vTO2nw==}
+  '@crxjs/vite-plugin@2.0.0-beta.30':
+    resolution: {integrity: sha512-skRcaJAbDrcfKPRqgBtyeBAk19KrRqtA8lO3ZiwJgnpRPX8EICbv0iR6Jb8E3V+knXCrYTc4O5Im+r+n43f14A==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -2656,7 +2656,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@crxjs/vite-plugin@2.0.0-beta.29':
+  '@crxjs/vite-plugin@2.0.0-beta.30':
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.6.0
