@@ -26,7 +26,7 @@
     "upload": "tsx ./tools/upload.ts"
   },
   "dependencies": {
-    "solid-js": "^1.9.3"
+    "solid-js": "^1.9.4"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.29",
