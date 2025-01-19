@@ -41,7 +41,7 @@
     "dependency-cruiser": "^16.9.0",
     "eslint": "^9.18.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-tailwindcss": "^3.17.5",
+    "eslint-plugin-tailwindcss": "^3.18.0",
     "globals": "^15.14.0",
     "happy-dom": "^15.11.7",
     "npm-run-all2": "^7.0.2",
