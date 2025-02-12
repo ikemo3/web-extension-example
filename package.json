@@ -42,7 +42,7 @@
     "eslint": "^9.20.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
-    "globals": "^15.14.0",
+    "globals": "^15.15.0",
     "happy-dom": "^17.1.0",
     "npm-run-all2": "^7.0.2",
     "postcss": "^8.5.2",
