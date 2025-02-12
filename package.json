@@ -45,7 +45,7 @@
     "globals": "^15.14.0",
     "happy-dom": "^17.0.4",
     "npm-run-all2": "^7.0.2",
-    "postcss": "^8.5.1",
+    "postcss": "^8.5.2",
     "prettier": "^3.5.0",
     "solid-devtools": "^0.33.0",
     "sort-package-json": "^2.14.0",
