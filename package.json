@@ -46,7 +46,7 @@
     "happy-dom": "^17.1.0",
     "npm-run-all2": "^7.0.2",
     "postcss": "^8.5.2",
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.1",
     "solid-devtools": "^0.33.0",
     "sort-package-json": "^2.14.0",
     "string-hash": "^1.1.3",
